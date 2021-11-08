@@ -1,0 +1,178 @@
+ERROR - 2021-10-12 08:21:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ref IS NULL ORDER BY urutan ASC' at line 1
+CRITICAL - 2021-10-12 08:21:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ref IS NULL ORDER BY urutan ASC' at line 1
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT * FROM m...')
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->index()
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-10-12 08:42:23 --> Undefined index: id_md_menu
+#0 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\APLIKASI\\202...', 74, Array)
+#1 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(22): App\Controllers\Settings->sidebar()
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->index()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-12 09:23:34 --> Undefined variable: url
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 17, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(67): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->employee()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 09:24:10 --> Invalid file: pages/settings/employee.php
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/settings/...')
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#2 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(67): view('pages/settings/...', Array)
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->employee()
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-12 09:24:23 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(34): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 09:24:55 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(35): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 12:02:11 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(34): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 12:02:37 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(34): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 12:04:07 --> syntax error, unexpected '?>'
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#2 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(34): view('pages/settings/...', Array)
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-12 12:04:17 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(34): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 12:06:00 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(35): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 12:06:58 --> Undefined variable: Rubrik
+#0 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\APLIKASI\\202...', 20, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#5 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(38): view('pages/settings/...', Array)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#7 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-10-12 12:21:57 --> Undefined index: modules
+#0 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\APLIKASI\\202...', 87, Array)
+#1 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(47): App\Controllers\Settings->sidebar()
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrikDet()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-10-12 12:29:28 --> Too few arguments to function App\Controllers\Settings::rubrikDet(), 0 passed in J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrikDet()
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-12 12:29:40 --> Too few arguments to function App\Controllers\Settings::rubrik(), 0 passed in J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik()
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-10-12 12:29:53 --> Too few arguments to function App\Controllers\Settings::sidebar(), 0 passed in J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php on line 34 and exactly 1 expected
+#0 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(34): App\Controllers\Settings->sidebar()
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->rubrik('11')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-10-12 12:41:46 --> Invalid file: pages/settings/employee.php
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/settings/...')
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#2 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(76): view('pages/settings/...', Array)
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->employee('1')
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-10-12 12:42:57 --> Invalid file: pages/settings/employee.php
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/settings/...')
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#2 J:\APLIKASI\2021\APP\office\app\Controllers\Settings.php(76): view('pages/settings/...', Array)
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->employee('1')
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

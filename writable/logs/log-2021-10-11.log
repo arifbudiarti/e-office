@@ -1,0 +1,14 @@
+CRITICAL - 2021-10-11 10:43:21 --> Invalid file: theme/topbar.php
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('theme/topbar.ph...')
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('theme/topbar', Array, true)
+#2 J:\APLIKASI\2021\APP\office\app\Views\theme\theme.php(10): view('theme/topbar')
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\APLIKASI\\202...')
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/app/home', Array, true)
+#7 J:\APLIKASI\2021\APP\office\app\Controllers\Apps.php(22): view('pages/app/home', Array)
+#8 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Apps->index()
+#9 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#10 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

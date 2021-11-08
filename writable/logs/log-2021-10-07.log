@@ -1,0 +1,18 @@
+CRITICAL - 2021-10-07 14:45:59 --> Undefined property: App\Controllers\Data::$db1
+#0 J:\APLIKASI\2021\APP\office\app\Controllers\Data.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'J:\\APLIKASI\\202...', 52, Array)
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Data->getRubrikDet('1')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-10-07 14:46:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1' at line 1
+CRITICAL - 2021-10-07 14:46:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1' at line 1
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT * FROM v...')
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v...')
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v...')
+#3 J:\APLIKASI\2021\APP\office\app\Controllers\Data.php(57): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...')
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Data->getRubrikDet('1')
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#6 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

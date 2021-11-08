@@ -1,0 +1,23 @@
+CRITICAL - 2021-09-29 00:26:43 --> Class 'App\Controllers\Services' not found
+#0 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Data->rubrik()
+#1 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-29 22:18:41 --> Undefined index: search
+#0 J:\APLIKASI\2021\APP\office\app\Models\Serverside_model.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\APLIKASI\\202...', 29, Array)
+#1 J:\APLIKASI\2021\APP\office\app\Models\Serverside_model.php(54): App\Models\Serverside_model->_get_datatables_query('v_rubrik', Array, Array, Array)
+#2 J:\APLIKASI\2021\APP\office\app\Controllers\Data.php(29): App\Models\Serverside_model->get_datatables('v_rubrik', Array, Array, Array, Array)
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Data->rubrik()
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#5 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-29 22:20:53 --> Undefined index: length
+#0 J:\APLIKASI\2021\APP\office\app\Models\Serverside_model.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\APLIKASI\\202...', 55, Array)
+#1 J:\APLIKASI\2021\APP\office\app\Controllers\Data.php(29): App\Models\Serverside_model->get_datatables('v_rubrik', Array, Array, Array, Array)
+#2 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Data->rubrik()
+#3 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#4 J:\APLIKASI\2021\APP\office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 J:\APLIKASI\2021\APP\office\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
