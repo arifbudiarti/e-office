@@ -1,0 +1,22 @@
+CRITICAL - 2021-11-09 16:08:57 --> Undefined variable: title
+#0 J:\xampp_7\htdocs\e-office\app\Views\pages\auth\login.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 7, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/auth/logi...', Array, true)
+#4 J:\xampp_7\htdocs\e-office\app\Controllers\Auth.php(10): view('pages/auth/logi...')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Auth->index()
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-11-09 16:09:11 --> Undefined variable: title
+#0 J:\xampp_7\htdocs\e-office\app\Views\pages\auth\login.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 7, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/auth/logi...', Array, true)
+#4 J:\xampp_7\htdocs\e-office\app\Controllers\Auth.php(11): view('pages/auth/logi...')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Auth->index()
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

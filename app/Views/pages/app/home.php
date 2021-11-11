@@ -1,4 +1,4 @@
-<?= $this->extend('theme/theme2'); ?>
+<?= $this->extend('theme/theme'); ?>
 <?= $this->section('content'); ?>
 <div class="row">
     <?php for ($i = 0; $i < sizeof($modules); $i++) : ?>

@@ -1,0 +1,228 @@
+ERROR - 2021-11-11 08:29:20 --> Table 'office.md_modules' doesn't exist
+CRITICAL - 2021-11-11 08:29:20 --> Table 'office.md_modules' doesn't exist
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 J:\xampp_7\htdocs\e-office\app\Models\ModulesModel.php(31): CodeIgniter\BaseModel->findAll()
+#7 J:\xampp_7\htdocs\e-office\app\Controllers\Apps.php(18): App\Models\ModulesModel->getModules()
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Apps->index()
+#9 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#10 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-11-11 08:39:29 --> Unknown column 'urutan' in 'order clause'
+CRITICAL - 2021-11-11 08:39:29 --> Unknown column 'urutan' in 'order clause'
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 J:\xampp_7\htdocs\e-office\app\Models\ModulesModel.php(31): CodeIgniter\BaseModel->findAll()
+#7 J:\xampp_7\htdocs\e-office\app\Controllers\Apps.php(18): App\Models\ModulesModel->getModules()
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Apps->index()
+#9 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#10 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-11-11 08:46:51 --> Undefined variable: url
+#0 J:\xampp_7\htdocs\e-office\app\Views\theme\theme.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 17, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#4 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/app/home', Array, true)
+#5 J:\xampp_7\htdocs\e-office\app\Controllers\Apps.php(19): view('pages/app/home', Array)
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Apps->index()
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apps))
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-11-11 10:11:22 --> Class 'App\Models\ModulesModel' not found
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(780): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-11 10:11:40 --> Unknown column 'id_md_modules' in 'where clause'
+CRITICAL - 2021-11-11 10:11:40 --> Unknown column 'id_md_modules' in 'where clause'
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT * FROM v...')
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v...')
+#3 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(105): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...')
+#4 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-11 10:12:03 --> Undefined index: id_md_menu
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\xampp_7\\htdo...', 107, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:12:27 --> [] operator not supported for strings
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-11-11 10:12:53 --> Unknown column 'urutan' in 'order clause'
+CRITICAL - 2021-11-11 10:12:53 --> Unknown column 'urutan' in 'order clause'
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT * FROM v...')
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v...')
+#3 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(112): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...')
+#4 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-11 10:19:20 --> Undefined variable: data2
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 157, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:20:33 --> Undefined variable: data4
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 160, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:21:25 --> Undefined variable: data4
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 160, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:26:12 --> Undefined variable: data2
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 158, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:26:38 --> Undefined variable: data2
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'J:\\xampp_7\\htdo...', 158, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:34:35 --> Undefined property: CodeIgniter\View\View::$db1
+#0 J:\xampp_7\htdocs\e-office\app\Views\theme\sidebar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'J:\\xampp_7\\htdo...', 21, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('theme/sidebar', Array, true)
+#4 J:\xampp_7\htdocs\e-office\app\Views\theme\theme.php(7): view('theme/sidebar')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#9 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(26): view('pages/settings/...', Array)
+#10 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->index()
+#11 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#12 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-11-11 10:45:24 --> Undefined index: lvl
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\xampp_7\\htdo...', 112, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 10:57:29 --> Undefined index: ref
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\xampp_7\\htdo...', 111, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-11-11 11:00:39 --> Table 'office.v_menu_lvl12' doesn't exist
+CRITICAL - 2021-11-11 11:00:39 --> Table 'office.v_menu_lvl12' doesn't exist
+#0 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT * FROM v...')
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v...')
+#3 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(121): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v...')
+#4 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-11 11:03:31 --> Undefined index: ref
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\xampp_7\\htdo...', 124, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 11:04:03 --> Undefined index: ref
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'J:\\xampp_7\\htdo...', 124, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 11:31:26 --> Undefined offset: 3
+#0 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'J:\\xampp_7\\htdo...', 125, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->sidebar('1')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-11-11 12:24:08 --> Undefined offset: 3
+#0 J:\xampp_7\htdocs\e-office\app\Views\theme\sidebar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'J:\\xampp_7\\htdo...', 33, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('theme/sidebar', Array, true)
+#4 J:\xampp_7\htdocs\e-office\app\Views\theme\theme.php(7): view('theme/sidebar')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#9 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(25): view('pages/settings/...', Array)
+#10 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->index()
+#11 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#12 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-11-11 12:25:28 --> Undefined offset: 3
+#0 J:\xampp_7\htdocs\e-office\app\Views\theme\sidebar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'J:\\xampp_7\\htdo...', 33, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('theme/sidebar', Array, true)
+#4 J:\xampp_7\htdocs\e-office\app\Views\theme\theme.php(7): view('theme/sidebar')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#9 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(25): view('pages/settings/...', Array)
+#10 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->index()
+#11 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#12 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-11-11 12:52:46 --> Undefined offset: 1
+#0 J:\xampp_7\htdocs\e-office\app\Views\theme\sidebar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'J:\\xampp_7\\htdo...', 41, Array)
+#1 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#2 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('theme/sidebar', Array, true)
+#4 J:\xampp_7\htdocs\e-office\app\Views\theme\theme.php(7): view('theme/sidebar')
+#5 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(214): include('J:\\xampp_7\\htdo...')
+#6 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('theme/theme', Array, true)
+#8 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\Common.php(1092): CodeIgniter\View\View->render('pages/settings/...', Array, true)
+#9 J:\xampp_7\htdocs\e-office\app\Controllers\Settings.php(25): view('pages/settings/...', Array)
+#10 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(802): App\Controllers\Settings->index()
+#11 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings))
+#12 J:\xampp_7\htdocs\e-office\vendor\codeigniter4\framework\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 J:\xampp_7\htdocs\e-office\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}

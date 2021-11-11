@@ -1,107 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Login &mdash; Stisla</title>
-
-    <!-- General CSS Files -->
-    <link rel="stylesheet" href="<?= base_url(); ?>/assets/login/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>/assets/login/css/all.css">
-
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="<?= base_url(); ?>/assets/login/css/style.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>/assets/login/css/components.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-OFFICE | <?= $title ?></title>
+    <!-- icon -->
+    <link rel="icon" href="<?= base_url(); ?>/assets/img/nsm_potrait.png" type="image/x-icon" />
+    <link href="<?= base_url(); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>/assets/css/animate.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>/assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <div id="app">
-        <section class="section">
-            <div class="d-flex flex-wrap align-items-stretch">
-                <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
-                    <div class="p-4 m-3">
-                        <img src="<?= base_url(); ?>/assets/img/nsm_potrait.png" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
-                        <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Stisla</span></h4>
-                        <p class="text-muted">Before you get started, you must login or register if you don't already have an account.</p>
-                        <form method="POST" action="<?php echo base_url('App'); ?>" class="needs-validation" novalidate="">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
-                                <div class="invalid-feedback">
-                                    Please fill in your email
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="d-block">
-                                    <label for="password" class="control-label">Password</label>
-                                </div>
-                                <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                                <div class="invalid-feedback">
-                                    please fill in your password
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                                    <label class="custom-control-label" for="remember-me">Remember Me</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group text-right">
-                                <a href="auth-forgot-password.html" class="float-left mt-3">
-                                    Forgot Password?
-                                </a>
-                                <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
-                                    Login
-                                </button>
-                            </div>
-
-                            <div class="mt-5 text-center">
-                                Don't have an account? <a href="auth-register.html">Create new one</a>
-                            </div>
-                        </form>
-
-                        <div class="text-center mt-5 text-small">
-                            Copyright &copy; Your Company. Made with 💙 by Stisla
-                            <div class="mt-2">
-                                <a href="#">Privacy Policy</a>
-                                <div class="bullet"></div>
-                                <a href="#">Terms of Service</a>
-                            </div>
+<body class="gray-bg">
+    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="font-bold">Selamat Datang di E-OFFICE</h2>
+                <p>
+                    E-OFFICE merupakan digitalisasi proses surat menyurat dan disposisi.
+                </p>
+                <p>
+                    E-OFFICE merupakan aplikasi inisiasi kantor pusat untuk menghemat kertas.
+                </p>
+                <p>
+                    When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <p>
+                    <small>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</small>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="ibox-content">
+                    <form class="m-t" role="form" action="<?php echo base_url('Auth/checkAuth'); ?>" method="post">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Username" required="" name="username">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="<?= base_url(); ?>/assets/img/nusamed.jpg">
-                    <div class="absolute-bottom-left index-2">
-                        <div class="text-light p-5 pb-2">
-                            <div class="mb-5 pb-3">
-                                <h1 class="mb-2 display-4 font-weight-bold">Nusamed Healthcare</h1>
-                                <h5 class="font-weight-normal text-muted-transparent">Surabaya, Indonesia</h5>
-                            </div>
-                            Photo by <a class="text-light bb" target="_blank" href="https://unsplash.com/photos/a8lTjWJJgLA">Justin Kauffman</a> on <a class="text-light bb" target="_blank" href="https://unsplash.com">Unsplash</a>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required="" name="password">
                         </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+
+                        <a href="<?php echo base_url('Auth/forgot'); ?>">
+                            <small>Forgot password?</small>
+                        </a>
+
+                        <p class="text-muted text-center">
+                            <small>Do not have an account?</small>
+                        </p>
+                        <a class="btn btn-sm btn-white btn-block" href="<?php echo base_url('Auth/register'); ?>">Create an account</a>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                Copyright PT NUSANTARA SEBELAS MEDIKA
+            </div>
+            <div class="col-md-6 text-right">
+                <small>© 2021</small>
+            </div>
+        </div>
     </div>
 
-    <!-- General JS Scripts -->
-    <script src="<?= base_url(); ?>/assets/login/js/jquery-3.3.1.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/login/js/popper.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/login/js/bootstrap.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/login/js/jquery.nicescroll.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/login/js/moment.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/login/js/stisla.js"></script>
-
-    <!-- Template JS File -->
-    <script src="<?= base_url(); ?>/assets/login/js/scripts.js"></script>
-    <script src="<?= base_url(); ?>/assets/login/js/custom.js"></script>
-
-    <!-- Page Specific JS File -->
 </body>
 
 </html>

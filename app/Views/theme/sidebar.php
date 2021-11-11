@@ -19,21 +19,38 @@
                 </div>
             </li>
             <?php if (isset($menu)) : ?>
-                <?php for ($i = 0; $i < sizeof($menu); $i++) : ?>
-                    <?php if (!empty($menu[$i]['url'])) { ?>
-                        <li <?= $menu[$i]['aktif'] ?>>
-                            <a href="<?= site_url() . $menu[$i]['url'] . "/" . $menu[$i]['id_md_menu'] ?>"><i class="fa <?= $menu[$i]['icon'] ?>"></i> <span class="nav-label"><?= $menu[$i]['menu'] ?></span></a>
+                <?php for ($i = 0; $i < sizeof($menu['level1']); $i++) : ?>
+                    <!-- id level 1 -->
+                    <?php $id1 = $menu['level1'][$i]['id']; ?>
+                    <?php if (!empty($menu['level1'][$i]['url'])) { ?>
+                        <li>
+                            <a href="<?= site_url() . $menu['level1'][$i]['url'] ?>"><i class="<?= $menu['level1'][$i]['icon'] ?>"></i> <span class="nav-label"><?= $menu['level1'][$i]['menu'] ?></span></a>
                         </li>
                     <?php } else { ?>
-                        <li <?= $menu[$i]['aktif'] ?>>
-                            <a href="<?= site_url() . $menu[$i]['url'] ?>"><i class="fa <?= $menu[$i]['icon'] ?>"></i> <span class="nav-label"><?= $menu[$i]['menu'] ?> </span><span class="fa arrow"></span></a>
+                        <li>
+                            <a href=""><i class="fa <?= $menu['level1'][$i]['icon'] ?>"></i> <span class="nav-label"><?= $menu['level1'][$i]['menu'] ?> </span><span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
-                                <?php for ($j = 0; $j < sizeof($menu[$i]['detail']); $j++) : ?>
-                                    <li>
-                                        <a href="<?= site_url() . $menu[$i]['detail'][$j]['url'] . "/" . $menu[$i]['detail'][$j]['ref'] ?>">
-                                            <i class="fa <?= $menu[$i]['detail'][$j]['icon'] ?>"></i> <?= $menu[$i]['detail'][$j]['menu'] ?>
-                                        </a>
-                                    </li>
+                                <?php for ($j = 0; $j < sizeof($menu['level2'][$id1]); $j++) : ?>
+                                    <?php $id2 = $menu['level2'][$id1][$j]['id']; ?>
+                                    <?php if (!empty($menu['level2'][$id1][$j]['url'])) { ?>
+                                        <li>
+                                            <a href="<?= site_url() . $menu['level2'][$id1][$j]['url'] ?>">
+                                                <i class="<?= $menu['level2'][$id1][$j]['icon'] ?>"></i> <?= $menu['level2'][$id1][$j]['menu'] ?>
+                                            </a>
+                                        </li>
+                                    <?php } else { ?>
+                                        <li>
+                                            <a href="#" id="damian"><?= $menu['level2'][$id1][$j]['menu'] ?> <span class="fa arrow"></span></a>
+                                            <ul class="nav nav-third-level">
+                                                <?php for ($k = 0; $k < sizeof($menu['level3'][$id2]); $k++) : ?>
+                                                    <li>
+                                                        <a href="<?= site_url() . $menu['level3'][$id2][$k]['url'] ?>"><?= $menu['level3'][$id2][$k]['menu'] ?></a>
+                                                    </li>
+                                                    <li>
+                                                    <?php endfor; ?>
+                                            </ul>
+                                        </li>
+                                    <?php } ?>
                                 <?php endfor; ?>
                             </ul>
                         </li>
